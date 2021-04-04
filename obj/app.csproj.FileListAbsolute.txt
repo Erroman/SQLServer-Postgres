@@ -1,0 +1,1 @@
+c:\jdk1.7\Endeavours\SQLServer-Postgres\obj\Debug\ResolveAssemblyReference.cache

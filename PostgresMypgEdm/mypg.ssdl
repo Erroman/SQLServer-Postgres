@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mypgModel.Store" Alias="Self" Provider="Npgsql" ProviderManifestToken="9.2.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="mypgModelStoreContainer">
+    <EntitySet Name="mystrings" EntityType="mypgModel.Store.mystrings" store:Type="Tables" Schema="public" />
+  </EntityContainer>
+  <EntityType Name="mystrings">
+    <Key>
+      <PropertyRef Name="imystr" />
+    </Key>
+    <Property Name="imystr" Type="int4" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="mystr" Type="varchar" MaxLength="40" />
+  </EntityType>
+</Schema>

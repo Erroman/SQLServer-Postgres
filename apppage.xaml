@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="pageClass" Loaded="heavilyLoaded"
+>
+<x:Code>
+void heavilyLoaded(object o,EventArgs e){Console.WriteLine(@"heavilyLoaded DisplayMemberPath");
+appage_loaded(o,e);
+}
+</x:Code>
+<Grid Name="myGrid" ShowGridLines="True">
+<Grid.ColumnDefinitions>
+<ColumnDefinition/>
+<ColumnDefinition/>
+</Grid.ColumnDefinitions>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+</Grid.RowDefinitions>
+<ComboBox Grid.Column="0" Grid.Row="1" Name="myCombie" DisplayMemberPath="mystr" ItemsSource="{Binding}" Width="120" Height="40" Margin="122,12,198,0"  VerticalAlignment="Top"/>
+<RadioButton Grid.Column="0">Postrges</RadioButton>
+<RadioButton Grid.Column="1">База данных SQL Server</RadioButton>
+<Label Name = "myL"  Grid.Column="0" Grid.Row="2">
+<TextBlock Text="Куку" Name="myText" TextWrapping="Wrap">
+</TextBlock>
+</Label>
+<Button Name = "myB" Click="myBClick" Content="Change 'Куку'" Grid.Column="0" Grid.Row="2" Width ="200" Height="40"/>
+</Grid>
+</Window>

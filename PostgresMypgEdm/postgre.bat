@@ -1,0 +1,1 @@
+"c:\Program Files\PostgreSql\9.2\Scripts\runpsql.bat"

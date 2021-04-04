@@ -1,0 +1,9 @@
+c:\Java8\Endeavours\SQLServer-Postgres\obj\X64\Debug\app.csprojResolveAssemblyReference.cache
+c:\Java8\Endeavours\SQLServer-Postgres\obj\X64\Debug\apppage.baml
+c:\Java8\Endeavours\SQLServer-Postgres\obj\X64\Debug\apppage.g.cs
+c:\Java8\Endeavours\SQLServer-Postgres\obj\X64\Debug\app.g.cs
+c:\Java8\Endeavours\SQLServer-Postgres\obj\X64\Debug\app_MarkupCompile.cache
+c:\Java8\Endeavours\SQLServer-Postgres\obj\X64\Debug\app.g.resources
+c:\Java8\Endeavours\SQLServer-Postgres\obj\X64\Debug\app.exe
+c:\Java8\Endeavours\SQLServer-Postgres\obj\X64\Debug\app.pdb
+c:\Java8\Endeavours\SQLServer-Postgres\app.exe

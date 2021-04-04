@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Прототипируется работа с базами данных c помощью WPF форм и через модели Entity Framework.
+ Описание задачи : с помощью формы WPF должен осуществлятся обмен данными с тремя базами одновременно,
+одна находится на Postgre , другая на SQL Server, третья база - XML файл,лежащий в одной директории с app.exe. Название обеих баз Mypg, а название xml файла Mypg.xml. Обмен данными осуществлятся через модели Entity Framework, файлы моделей лежат в поддиректориях PostgresMypgEdm, SQLServerMypgEdm директории с файлами проекта. В конечном результате после компиляции должен получится .exe файл, в который эти модели будут встроены, и который можно будет запускать из любого места в файловой системе компьютера (сети) . Пока, 27.11.2015 , осуществлятся работа только с базой Postgre и файлы модели должны обязательно лежать в поддиректории PostgresMypg текущей директории, откуда запускается исполнительный файл app.exe  (не где app.exe находится физически,а откуда запускается!) -->
+<!--  Шаг 1
+      Встроить файлы модели Postgre в исполнительный  файл app.exe         -->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  ToolsVersion="4.0">
+
+<PropertyGroup>
+<MessProp>$(MSBuildBinPath)</MessProp>
+<OutputPath>.\</OutputPath>
+</PropertyGroup>
+
+
+<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets"/>
+
+<ItemGroup>
+<ApplicationDefinition Include="app.xaml"/>
+</ItemGroup>
+<ItemGroup>
+<Page Include="apppage.xaml"/>
+<Page Include="L2DBForm.xaml"/>
+</ItemGroup>
+<ItemGroup>
+<Compile Include="L2DBForm.xaml.cs"/>
+<Compile Include="app.xaml.cs"/>
+<Compile Include="apppage.xaml.cs"/>
+<Compile Include="PostgresMypgEdm\mypg.ObjectLayer.cs"/>
+</ItemGroup>
+<ItemGroup>
+<Reference Include="System" />
+<Reference Include="System.Data" />
+<Reference Include="System.Data.Entity" />
+<Reference Include="System.Runtime.Serialization" />
+<Reference Include="System.Xml" />
+<Reference Include="System.Xml.Linq" />
+<Reference Include="System.Xaml" />
+<Reference Include="WindowsBase" />
+<Reference Include="PresentationCore" />
+<Reference Include="PresentationFramework" />
+<Reference Include="Npgsql" />
+</ItemGroup>
+<!--
+<ItemGroup>
+    <EntityDeploy Include="BAModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BAModel.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EntityDeploy>
+  </ItemGroup>
+-->
+
+<Target Name="BeforeBuild">
+<Message Text="MSBuildBinPath = $(MSBuildBinPath)"/>
+</Target>
+
+</Project>

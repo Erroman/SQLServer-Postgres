@@ -1,0 +1,6 @@
+Для генерации файлов EDM :
+
+Edmgen /mode:fullgeneration /prov:Npgsql /c:"host=LOCALHOST;port=5432;protocol=3;database=mypg;user id=postgres;password=44332211;ssl=False;sslmode=Disable;timeout=15;pooling=True;connectionlifetime=15;minpoolsize=1;maxpoolsize=20;syncnotification=False;commandtimeout=20;enlist=False;preloadreader=False;useextendedtypes=False;integrated security=False;compatible=2.0.12.0" /project:mypg /entitycontainer:mypgEntities /namespace:mypgModel /language:CSharp
+
+Для генерации app.exe,минимального Entity - приложения :
+sc app.cs mypg.ObjectLayer.cs /r:npgsql.dll;System.Data.Entity.dll

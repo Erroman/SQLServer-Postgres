@@ -1,0 +1,2 @@
+Для генерации app.exe :
+csc app.cs PostgresMypgEdm\mypg.ObjectLayer.cs /r:PostgresMypgEdm\npgsql.dll;System.Data.Entity.dll

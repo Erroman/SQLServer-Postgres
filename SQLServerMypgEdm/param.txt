@@ -1,0 +1,6 @@
+Для генерации файлов EDM из DB SQLServer:
+
+Edmgen /mode:fullgeneration /prov:System.Data.SqlClient /c:"Data Source=.\SQLEXPRESS;Initial Catalog=mypg;Integrated Security=SSPI" /project:mypg /entitycontainer:mypgEntities /namespace:mypgModel /language:CSharp
+
+Для генерации app.exe,минимального Entity - приложения :
+cs app.cs mypg.ObjectLayer.cs /r:npgsql.dll;System.Data.Entity.dll

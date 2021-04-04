@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mypgModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="mypgModelStoreContainer">
+    <EntitySet Name="Mystrings" EntityType="mypgModel.Store.Mystrings" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Mystrings">
+    <Key>
+      <PropertyRef Name="Imystr" />
+    </Key>
+    <Property Name="Imystr" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Mystr" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6013: Первичный ключ в таблице или представлении "mypg.dbo.tools" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+
+<EntityType Name="tools">
+  <Property Name="kuku1" Type="int" />
+</EntityType>-->
+</Schema>

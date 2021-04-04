@@ -1,0 +1,15 @@
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\app.csprojAssemblyReference.cache
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\apppage.baml
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\apppage.g.cs
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\L2DBForm.g.cs
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\app.g.cs
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\app_MarkupCompile.cache
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\app_MarkupCompile.lref
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\L2DBForm.baml
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\app.g.resources
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\app.csproj.CoreCompileInputs.cache
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\app.csproj.CopyComplete
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\app.exe
+c:\Endeavours\SQLServer-Postgres\obj\x86\Debug\app.pdb
+c:\Endeavours\SQLServer-Postgres\app.exe
+c:\Endeavours\SQLServer-Postgres\app.pdb
